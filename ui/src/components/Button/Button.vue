@@ -22,6 +22,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    success: {
+      type: Boolean,
+      default: false,
+    },
     danger: {
       type: Boolean,
       default: false,
@@ -49,6 +53,7 @@ export default {
       classes: computed(() => ({
         "xly-button": true,
         "xly-button--primary": props.primary,
+        "xly-button--success": props.success,
         "xly-button--warning": props.warning,
         "xly-button--danger": props.danger,
         "xly-button--disabled": props.disabled,
