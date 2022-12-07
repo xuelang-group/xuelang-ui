@@ -10,5 +10,9 @@ module.exports = {
   },
   docs: {
     docsPage: "automatic"
+  },
+  async viteFinal(config) {
+    config.build.assetsDir = "xuelang-ui/assets"
+    return config
   }
 };
